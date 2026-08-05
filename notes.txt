@@ -1,0 +1,213 @@
+Notes: Web Basics and HTML
+
+ What is a Webpage?
+ - A webpage is a document displayed in a web browser
+ - Contains text, images, videos, links, and other multimedia content
+ - Part of a website (collection of related webpages)
+
+ How to Access the Web
+ - Requires an internet connection (WiFi, Ethernet, mobile data)
+ - Requires a web browser (Chrome, Firefox, Safari, Edge, etc.)
+ - Browser sends requests to web servers and displays the returned content
+
+ HTML Overview
+ - HTML = HyperText Markup Language
+ - The fundamental language for creating webpages
+ - Defines the structure and content of web documents
+ - Uses tags and elements to organize information
+ - Works together with CSS (styling) and JavaScript (interactivity)
+
+ # Additional Definitions and Concepts
+
+## What is a Website?
+- A website is a collection of related webpages hosted on a web server
+- All pages share a common domain name (e.g., example.com)
+- Can contain multiple pages linked together for navigation
+- Serves a specific purpose (information, entertainment, e-commerce, etc.)
+
+## What is the Web?
+- The Web (World Wide Web) is a system of interconnected documents and resources
+- Accessed via the internet using URLs (web addresses)
+- Allows users to navigate between pages using hyperlinks
+- Created by Tim Berners-Lee in 1989
+
+## What is the Internet?
+- The Internet is a global network of interconnected computers
+- Infrastructure that allows devices to communicate with each other
+- The Web is just one service that runs on the Internet (others include email, file transfer, etc.)
+- Uses protocols like TCP/IP to transmit data
+
+## What is a Browser?
+- A browser is software that retrieves and displays web content
+- Examples: Chrome, Firefox, Safari, Edge, Opera
+- Interprets HTML, CSS, and JavaScript to render webpages
+- Sends HTTP/HTTPS requests to web servers and receives responses
+
+## Purpose of HTML
+- Provides structure and meaning to web content
+- Defines elements like headings, paragraphs, links, images, etc.
+- Creates the foundation that browsers can interpret and display
+- Enables semantic markup for accessibility and SEO
+- Acts as the skeleton of a webpage (CSS adds style, JavaScript adds behavior)
+
+## What is HyperText?
+- HyperText refers to text that contains links (hyperlinks) to other documents
+- Allows non-linear navigation between documents
+- The "HT" in HTML and HTTP (HyperText Transfer Protocol)
+- Enables the interconnected nature of the Web
+
+## What is a Markup Language?
+- A markup language uses tags to annotate and structure content
+- Tags tell the browser how to display or organize information
+- HTML uses angle brackets: <tag>content</tag>, Inside the angular bracket
+- Other examples: XML, Markdown
+- Different from programming languages (doesn't have logic or calculations)
+- Focuses on presentation and structure rather than functionality
+
+
+
+# Frontend and Backend
+
+## What is Frontend?
+- Frontend refers to the client-side of a web application
+- The part of the website that users see and interact with directly
+- Runs in the user's web browser
+- Focuses on user interface (UI) and user experience (UX)
+- Also called "client-side development"
+
+## What is Backend?
+- Backend refers to the server-side of a web application
+- The part that users don't see - runs on web servers
+- Handles data storage, business logic, and server operations
+- Manages databases, authentication, and server configuration
+- Also called "server-side development"
+
+## Technologies Required for Frontend
+- **HTML** - Structure and content of webpages
+- **CSS** - Styling and layout of webpages
+- **JavaScript** - Interactivity and dynamic behavior
+- **Frontend Frameworks/Libraries** (optional but common):
+  - React, Angular, Vue.js
+  - Bootstrap, Tailwind CSS (for styling)
+
+## What is CSS?
+- CSS = Cascading Style Sheets
+- A language used to style and layout HTML elements
+- Controls colors, fonts, spacing, positioning, and visual design
+- Separates presentation from content
+- Makes webpages visually appealing and responsive
+
+## What is JavaScript?
+- JavaScript is a programming language for web development
+- Adds interactivity and dynamic behavior to webpages
+- Can respond to user actions (clicks, typing, scrolling, etc.)
+- Manipulates HTML and CSS in real-time
+- Runs in the browser (frontend) and on servers (backend with Node.js)
+- Different from Java - they are completely separate languages
+
+## How to Create an HTML File
+1. Open a text editor (Notepad, VS Code, Sublime Text, etc.)
+2. Write your HTML code starting with basic structure
+3. Save the file with a .html extension (e.g., index.html, page.html)
+4. Open the file in a web browser to view it
+5. Basic HTML structure to start with:
+   html
+   <!DOCTYPE html>
+   <html>
+   <head>
+       <title>Page Title</title>
+   </head>
+   <body>
+       <h1>Hello World</h1>
+   </body>
+   </html>
+   ```
+```
+
+
+# Note: This is just a personal note/reminder about opening folders in VS Code
+# To open a folder in VS Code using the address bar:
+# 1. Navigate to the folder in File Explorer (Windows) or Finder (Mac)
+# 2. Copy the folder path from the address bar
+# 3. Open VS Code
+# 4. Go to File > Open Folder (or use Ctrl+K Ctrl+O on Windows/Linux, Cmd+K Cmd+O on Mac)
+# 5. Paste the folder path and press Enter
+# Alternative: Type "code ." in the terminal/command prompt while in the desired folder
+# type cmd and write code .
+
+
+
+# How to Install and Use Live Server in VS Code
+
+## What is Live Server?
+- Live Server is a VS Code extension that launches a local development server
+- Automatically refreshes the browser when you save changes to your HTML/CSS/JS files
+- Provides a better development experience than manually refreshing the browser
+- Shows your webpage at a local URL (e.g., http://127.0.0.1:5500)
+
+## Steps to Install Live Server
+
+### Step 1: Open VS Code
+- Launch Visual Studio Code on your computer
+
+### Step 2: Open Extensions Panel
+- Click on the Extensions icon in the left sidebar (or press Ctrl+Shift+X on Windows/Linux, Cmd+Shift+X on Mac)
+- The Extensions icon looks like four squares with one separated
+
+### Step 3: Search for Live Server
+- Type "Live Server" in the search box at the top of the Extensions panel
+- Look for the extension by Ritwick Dey (it has millions of downloads)
+
+### Step 4: Install the Extension
+- Click the "Install" button next to Live Server
+- Wait for the installation to complete (usually takes a few seconds)
+- The button will change to show it's installed
+
+### Step 5: Reload VS Code (if needed)
+- Sometimes VS Code may ask you to reload
+- Click "Reload" if prompted, or close and reopen VS Code
+
+## How to Use Live Server
+
+### Method 1: Right-Click Method
+1. Open your HTML file in VS Code
+2. Right-click anywhere in the HTML file
+3. Select "Open with Live Server" from the context menu
+4. Your default browser will open automatically showing your webpage
+
+### Method 2: Status Bar Method
+1. Open your HTML file in VS Code
+2. Look at the bottom-right corner of VS Code (status bar)
+3. Click on "Go Live" button
+4. Your webpage will open in the browser
+
+### Method 3: Keyboard Shortcut
+1. Open your HTML file in VS Code
+2. Press Alt+L then Alt+O (Windows/Linux) or Cmd+L then Cmd+O (Mac)
+3. The browser will launch with your webpage
+
+## How Live Server Works
+- Creates a local web server on your computer
+- Serves your HTML files at http://127.0.0.1:5500 (or similar port)
+- Watches for file changes in your project
+- Automatically refreshes the browser when you save changes
+- No need to manually refresh the browser after editing code
+
+## How to Stop Live Server
+- Click "Port: 5500" in the status bar at the bottom-right
+- Or right-click in the HTML file and select "Stop Live Server"
+- Or close the browser tab (server continues running in background)
+
+## Benefits of Using Live Server
+- Saves time - no manual browser refresh needed
+- Instant feedback when you make changes
+- Works with HTML, CSS, and JavaScript files
+- Easy to use and configure
+- Free and open-source
+
+## Troubleshooting Tips
+- If Live Server doesn't work, make sure you have an HTML file open
+- Check that the file is saved with .html extension
+- Try restarting VS Code if the extension doesn't appear
+- Make sure no other program is using port 5500
+- Check your firewall settings if the browser doesn't open
