@@ -5,12 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>This is main heading</h1>
-    <h2>this is small heading than h1 but bigger than h3</h2>
-    <h3>this is small heading than h2 but bigger than h4</h3>
-    <h4>this is small heading than h3 but bigger than h5</h4>
-    <h5>this is small heading than h4 but bigger than h6</h5>
-    <h6>this is last small heading</h6>
-</body>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Student Registration Form</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+                
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+                
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br>
+                
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required><br>
+                
+                <label for="telephone">Telephone No.:</label><br>
+                <input type="tel" id="telephone" name="telephone" placeholder="Enter your telephone number" required><br>
+                
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" required>
+                <label for="other">Other</label><br>
+                
+                <label for="submission-time">Time of Submission:</label><br>
+                <input type="time" id="submission-time" name="submission-time" required><br>
+                
+                <label for="submission-date">Date of Submission:</label><br>
+                <input type="date" id="submission-date" name="submission-date" required><br>
+                  
+
+
+                <label>Select Courses:</label><br>
+                <input type="checkbox" id="java" name="courses" value="java">
+                <label for="java">Java</label><br>
+                <input type="checkbox" id="python" name="courses" value="python">
+                <label for="python">Python</label><br>
+                <input type="checkbox" id="typescript" name="courses" value="typescript">
+                <label for="typescript">TypeScript</label><br>
+                <input type="checkbox" id="react" name="courses" value="react">
+                <label for="react">React</label><br>
+                <input type="checkbox" id="html" name="courses" value="html">
+                <label for="html">HTML</label><br>
+                <input type="checkbox" id="css" name="courses" value="css">
+                <label for="css">CSS</label><br>
+                <input type="checkbox" id="javascript" name="courses" value="javascript">
+                <label for="javascript">JavaScript</label><br>
+                <input type="checkbox" id="nodejs" name="courses" value="nodejs">
+                <label for="nodejs">Node.js</label><br>
+
+
+                
+                <label for="country">Country:</label><br>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="india">India</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                    <option value="japan">Japan</option>
+                    <option value="china">China</option>
+                    <option value="brazil">Brazil</option>
+                </select><br>                                
+                <button type="submit">submit</button>
+            </fieldset>
+        </form>
+    </body>    
 </html>
