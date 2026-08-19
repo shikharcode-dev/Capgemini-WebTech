@@ -1050,4 +1050,25 @@
 # - Few options (2-5) → Use Radio Buttons
 # - Many options (6+) → Use Dropdown
 
-how to pick multiple otions on list= using CHECKBOXES
+
+
+
+
+whar is the purpose of required attribute = it makes the fileds mandatory, nto the inpit fields user cant submit the form entire data 
+after the entering the data in the value attribute the data is being stored.
+to accessible the data from the valuse attribute you need name attribute
+
+
+after collecting the data ehre the data is Send= the data is send to backend by url
+what is purpose of action attribute = after submit the form what action should be performed that will mention in action attribute in form ok. = as 
+action = "server.py"
+action = "server.java"
+action = "server.php" etc...
+
+what is about method in form = it tell about your dats security and visiblein the url this is GET
+and more security the data use post it is hidden in url.
+wabp compact is good for web its lightweight
+
+the src ascepts 2 kind a paths 
+absolute - links
+relative path - add image in the same folder or file
