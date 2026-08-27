@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container1 {
+            height: 300px;
+            width: 300px;
+            background-color: navy;
+            font-family: Arial, sans-serif;
+           /* position: static; /*<!-- This is the default value for the position property, meaning the element will be positioned according to the normal flow of the document. -->   */
+
+            /* top: 50px ; */
+
+            /* relative */
+            position: relative; /*<!-- This means the element will be positioned relative to its normal position. -->*/
+            /*top: 50px; /*<!-- This will move the element 50 pixels down from its normal position. -->*/
+
+            /* absolute */
+            /*position: absolute; /*<!-- This means the element will be positioned relative to its nearest positioned ancestor (not static). If there is no such ancestor, it will be positioned relative to the initial containing block (usually the viewport). -->*/
+            /*top: 50px; /*<!-- This will move the element 50 pixels down from the top of its containing block. -->*/ 
+
+            #child1 {
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                position: absolute; /*<!-- This means the child element will be positioned relative to its nearest positioned ancestor (which is #container1 in this case). -->*/
+                top: 20px; /*<!-- This will move the child element 20 pixels down from the top of #container1. -->*/
+                left: 60px;
+                top: 60px; /*<!-- This will move the child element 20 pixels to the right from the left edge of #container1. -->*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <div id="child1"></div>
+    </div>
+</body>
+</html>
