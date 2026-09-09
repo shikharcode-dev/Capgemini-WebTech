@@ -1,7 +1,57 @@
-what is position properties in css?
-In CSS, the position property is used to specify the positioning method for an element. It determines how an element is positioned in the document flow and how it interacts with other elements. There are several values for the position property:
-1. static: This is the default value. Elements with position: static are positioned according to the normal flow of the document. They are not affected by top, bottom, left, or right properties.
-2. relative: Elements with position: relative are positioned relative to their normal position in the document flow. You can use the top, bottom, left, and right properties to adjust their position without affecting other elements.
-3. absolute: Elements with position: absolute are positioned relative to their nearest positioned ancestor (an ancestor with a position value other than static). If there is no such ancestor, they are positioned relative to the initial containing block (usually the viewport). You can use the top, bottom, left, and right properties to specify their exact position.
-4. fixed: Elements with position: fixed are positioned relative to the viewport, which means they stay in the same place even when the page is scrolled. They are not affected by other elements in the document flow.
-5. sticky: Elements with position: sticky are positioned based on the user's scroll position. They toggle between relative and fixed positioning depending on the scroll position. A sticky element will "stick" to a specified position within its parent container until a certain scroll threshold is reached.
+
+/* Change marker type */
+    list-style-type: circle;
+    list-style-type: circle; /* Options: disc, circle, square, none */
+
+
+    list-style-type: decimal;
+    list-style-type: decimal; /* Options: decimal, lower-alpha, upper-roman, etc. */
+
+/* Change marker position */
+    list-style-position: inside;
+    list-style-position: inside; /* Options: inside, outside */
+
+/* Use custom image as marker */
+ul {
+    list-style-image: url('marker.png');
+}
+/* Shorthand - all in one */
+ul {
+    list-style: square inside;
+}
+/* Remove all list styling */
+ul {
+    list-style: none;
+}
+/* Common use case - remove default bullets */
+ul, ol {
+    list-style-type: none;
+}
+
+
+how to customize unordered k=list using css?
+ list-style -type property is used to customize your list item through css.
+
+ HTML                       css
+ -------------------------------
+ type="disc"->list style -type:disc;
+ tpe="circle"->list-style-type :circle;
+ type="square"->list-style-type:square;
+ type="none"->list-style-type:none;
+
+ css is more powerfull than HTML
+
+ list-style-type:decimal;
+ list-style-type:upper-roman;
+  list-style-type:lower-roman;
+   list-style-type:upper-alpha;
+    list-style-type:lower-alpha;
+
+
+NOTE 
+ CSS is more powerfull than HTML
+ CSS properties should be acknowledge by the search engines.
+
+ li::before{
+    content: " add emmoji"
+ }
