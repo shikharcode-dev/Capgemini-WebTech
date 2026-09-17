@@ -55,3 +55,203 @@ NOTE
  li::before{
     content: " add emmoji"
  }
+
+
+
+/* CSS Units - Absolute and Relative Types */
+
+/* ABSOLUTE UNITS - Fixed size, not affected by other elements */
+/* These units remain constant regardless of screen size or parent element */
+
+/* px (pixels) - Most common absolute unit */
+div {
+    width: 200px;
+    height: 100px;
+    font-size: 16px;
+}
+
+/* pt (points) - 1pt = 1/72 inch, commonly used in print */
+p {
+    font-size: 12pt;
+}
+
+/* cm (centimeters) - Physical measurement */
+div {
+    width: 5cm;
+}
+
+/* mm (millimeters) - Physical measurement */
+div {
+    width: 50mm;
+}
+
+/* in (inches) - Physical measurement */
+div {
+    width: 2in;
+}
+
+/* pc (picas) - 1pc = 12pt */
+p {
+    font-size: 1pc;
+}
+
+
+/* RELATIVE UNITS - Size relative to another value */
+/* These units scale based on parent elements or viewport */
+
+/* % (percentage) - Relative to parent element */
+div {
+    width: 50%; /* 50% of parent's width */
+    font-size: 120%; /* 120% of parent's font-size */
+}
+
+/* em - Relative to parent element's font-size */
+/* 1em = current font-size of parent */
+p {
+    font-size: 16px;
+}
+span {
+    font-size: 2em; /* 2 × 16px = 32px */
+    padding: 0.5em; /* 0.5 × 32px = 16px */
+}
+
+/* rem (root em) - Relative to root element's font-size */
+/* More predictable than em, doesn't compound */
+html {
+    font-size: 16px;
+}
+h1 {
+    font-size: 2rem; /* 2 × 16px = 32px */
+}
+
+/* vw (viewport width) - 1vw = 1% of viewport width */
+div {
+    width: 50vw; /* 50% of browser window width */
+}
+
+/* vh (viewport height) - 1vh = 1% of viewport height */
+div {
+    height: 100vh; /* Full viewport height */
+}
+
+/* vmin - 1% of viewport's smaller dimension */
+div {
+    width: 50vmin;
+}
+
+/* vmax - 1% of viewport's larger dimension */
+div {
+    width: 50vmax;
+}
+
+/* ch - Width of the "0" character in current font */
+input {
+    width: 20ch; /* Width of 20 "0" characters */
+}
+
+/* ex - Height of lowercase "x" in current font */
+sup {
+    font-size: 1ex;
+}
+
+
+/* BEST PRACTICES */
+/* Use px for borders, shadows, and fixed layouts */
+border: 1px solid black;
+
+/* Use rem for font-sizes (easier to scale entire site) */
+body {
+    font-size: 1rem;
+}
+
+/* Use % or em for responsive padding/margins */
+padding: 2em;
+
+/* Use vw/vh for full-screen sections */
+section {
+    height: 100vh;
+}
+
+/* NOTE: Relative units are more flexible and responsive */
+/* Absolute units provide precise control but less adaptability */
+
+
+
+
+
+/* Tables in CSS are used to style HTML table elements (<table>, <tr>, <td>, <th>) */
+/* CSS provides properties to control table layout, borders, spacing, and appearance */
+
+/* Basic table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Removes space between cell borders */
+    /* border-collapse options: collapse, separate */
+}
+
+/* Styling table headers */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Styling table cells */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Styling table rows */
+tr:hover {
+    background-color: #f5f5f5; /* Highlight row on hover */
+}
+
+/* Alternate row colors (striped table) */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Table layout property */
+table {
+    table-layout: fixed; /* Options: auto, fixed */
+    /* fixed: columns have equal width, faster rendering */
+    /* auto: columns adjust based on content */
+}
+
+/* Border spacing (only works with border-collapse: separate) */
+table {
+    border-collapse: separate;
+    border-spacing: 10px 5px; /* horizontal vertical spacing */
+}
+
+/* Caption styling */
+caption {
+    caption-side: top; /* Options: top, bottom */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Empty cells display */
+table {
+    empty-cells: show; /* Options: show, hide */
+}
+
+
+
+
+
+html
+
+border="2"
+bgcolor="green"
+<font color="white"></font>
+rules="rows"/"cols"
+
+css
+
+border:2px solid red;
+background color:red;
+color:white;
+corder-collapse:collapse;
