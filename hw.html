@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+            background: #eeeeee;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        button {
+            width: 120px;
+            height: 45px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .b1 { background: linear-gradient(rgb(255, 17, 0), orange); }
+        .b2 { background: linear-gradient(rgba(0, 0, 255, 0.685), purple); }
+        .b3 { background: linear-gradient(green, yellow); }
+        .b4 { background: linear-gradient(rgb(231, 9, 46), red); }
+        .b5 { background: linear-gradient(cyan, blue); }
+        .b6 { background: linear-gradient(orange, yellow); }
+        .b7 { background: linear-gradient(purple, pink); }
+        .b8 { background: linear-gradient(lime, green); }
+        .b9 { background: linear-gradient(brown, rgb(255, 153, 0)); }
+        .b10 { background: linear-gradient(black, gray); }
+        .b11 { background: linear-gradient(navy, cyan); }
+        .b12 { background: linear-gradient(red, purple); }
+        .b13 { background: linear-gradient(yellow, green); }
+        .b14 { background: linear-gradient(blue, pink); }
+        .b15 { background: linear-gradient(orange, red); }
+        .b16 { background: linear-gradient(gray, black); }
+        .b17 { background: linear-gradient(green, blue); }
+        .b18 { background: linear-gradient(pink, rgba(128, 0, 128, 0.904)); }
+        .b19 { background: linear-gradient(rgb(0, 225, 255), orange); }
+        .b20 { background: linear-gradient(cyan, green); }
+
+        .dashboard {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            width: 350px;
+            padding: 25px;
+            border-radius: 15px;
+            background: radial-gradient(circle, white, skyblue);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            background: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .results {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .pie {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: conic-gradient(
+        yellow 0% 18.69%,
+        red 18.69% 29.90%,
+        green 29.90% 52.33%,
+        orange 52.33% 77.57%,
+        purple 77.57% 100%
+    );
+}
+
+        .subjects {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .subject {
+            background: white;
+            padding: 10px;
+            width: 140px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Dashboard</h1>
+
+    <h2>Gradient Buttons</h2>
+
+    <div class="buttons">
+        <button class="b1">Button 1</button>
+        <button class="b2">Button 2</button>
+        <button class="b3">Button 3</button>
+        <button class="b4">Button 4</button>
+        <button class="b5">Button 5</button>
+        <button class="b6">Button 6</button>
+        <button class="b7">Button 7</button>
+        <button class="b8">Button 8</button>
+        <button class="b9">Button 9</button>
+        <button class="b10">Button 10</button>
+        <button class="b11">Button 11</button>
+        <button class="b12">Button 12</button>
+        <button class="b13">Button 13</button>
+        <button class="b14">Button 14</button>
+        <button class="b15">Button 15</button>
+        <button class="b16">Button 16</button>
+        <button class="b17">Button 17</button>
+        <button class="b18">Button 18</button>
+        <button class="b19">Button 19</button>
+        <button class="b20">Button 20</button>
+    </div>
+
+    <h2>Student Card</h2>
+
+    <div class="dashboard">
+        <div class="card">
+
+            <h2>Student Details</h2>
+
+            <div class="info">
+                <span>Name</span>
+                <span>Shikhar Mishra</span>
+            </div>
+
+            <div class="info">
+                <span>Roll No</span>
+                <span>2510001179</span>
+            </div>
+
+            <div class="info">
+                <span>Course</span>
+                <span>CSE</span>
+            </div>
+
+            <div class="info">
+                <span>Semester</span>
+                <span>3rd</span>
+            </div>
+
+        </div>
+    </div>
+
+    <h2>MST Results</h2>
+
+    <div class="results">
+
+        <div class="pie"></div>
+
+        <div class="subjects">
+            <div class="subject"> OOPJ(Yellow)  - 20</div>
+            <div class="subject"> IOPS(Red)  - 12</div>
+            <div class="subject"> DLD(Green)  - 24</div>
+            <div class="subject"> DSA(Orange)  - 27</div>
+            <div class="subject"> DMS(Purple)  - 24</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
