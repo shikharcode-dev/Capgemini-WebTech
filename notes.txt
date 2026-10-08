@@ -582,69 +582,377 @@ Comments are two types :
 
 /* ... */
 
-Variables in js, how are the way to create the variables in js? = 
+js  - 1995, Braindain Erich, In 10 days
 
-// VARIABLES IN JAVASCRIPT
-// =======================
+JavaScript
+----------------------
 
-// A variable is a container/storage location that holds data/values in memory.
-// Variables allow you to store, retrieve, and manipulate data in your program.
-
-// WAYS TO CREATE VARIABLES IN JAVASCRIPT
-// =======================================
-
-// There are 3 ways to declare variables in JavaScript:
-
-// 1. var (Old way - ES5 and earlier)
-// -----------------------------------
-var name = "John";
-var age = 25;
-
-// Characteristics of var:
-// - Function-scoped (not block-scoped)
-// - Can be re-declared
-// - Can be updated
-// - Hoisted to the top of their scope
+JavaScript is a both scripting and programing language used to add interactivity to your web pages.
 
 
-// 2. let (Modern way - ES6/ES2015+)
-// ----------------------------------
-let city = "New York";
-let price = 100;
-
-// Characteristics of let:
-// - Block-scoped
-// - Cannot be re-declared in the same scope
-// - Can be updated
-// - Not hoisted (temporal dead zone)
+Where JS is being used?
+For creating frontend application, backend application and working with testing tools.
 
 
-// 3. const (Modern way for constants - ES6/ES2015+)
-// -------------------------------------------------
-const PI = 3.14159;
-const country = "USA";
-
-// Characteristics of const:
-// - Block-scoped
-// - Cannot be re-declared
-// - Cannot be updated/reassigned
-// - Must be initialized at declaration
-// - Not hoisted (temporal dead zone)
+Why frameworks are required?
+It will proper structure, tools, features for creating your application.
+It makes your development easy.
 
 
-// COMPARISON TABLE
-// ================
-// Feature          var         let         const
-// -------          ---         ---         -----
-// Scope            Function    Block       Block
-// Re-declare       Yes         No          No
-// Update           Yes         Yes         No
-// Hoisting         Yes         No          No
-// Initialize       Optional    Optional    Required
+What is the difference between scripting and programing language?
 
 
-// BEST PRACTICES
-// ==============
-// - Use const by default
-// - Use let when you need to reassign the variable
-// - Avoid using var in modern JavaScript
+Scripting language
+
+01 - By using the scripting language you're adding functionality to an existing application. It's
+     optional.
+02 - It is light weight.
+03 - Scripting Language don't have access to Operating System and hardware of your system.
+04 - Examples: JavaScript, VBScript, JScript, PythonScript
+
+
+Programing Language
+
+You are building entire application from scratch by using a programing language. It is mandatory.
+02 - It is heavy.
+03 - It has access to Operating System and Hardwares.
+04 - Examples: JavaScript, Java, Python, C#
+
+
+For frontend application there's two way to create and run JavaScript.
+
+01 - Internal JS - <script></script>
+In the same HTML file within the script tag you could write JavaScript and run it with the HTML.
+
+02 - External JavaScript
+
+You need to create external JS files and embed them by using <script src=""></script>. It will help you to not make your HTML file bulky.
+
+
+
+
+JavaScript history note from this image for your future JS study context:
+
+JavaScript → 1995
+Created by Brendan Eich
+Developed at Netscape
+Initially used with Netscape Navigator
+The name JavaScript was largely a branding/marketing choice; it is not Java
+JavaScript ≠ Java
+Internet Explorer and Chrome came later and are not the origin of JavaScript.
+
+
+ECMA → organization associated with standardization of programming languages.
+ECMAScript → standardized specification for JavaScript.
+ECMAScript 1 → 1997.
+Your note lists ES17 / ES2026 as the latest standard.
+Browser lineage:
+Netscape Navigator → Mozilla Firefox
+Internet Explorer → Microsoft Edge
+Chrome → Google Chrome
+
+One correction to keep your notes technically accurate: ECMA is now officially called Ecma International, and ECMAScript is standardized as ECMA-262.
+--------------------------------
+First name: Mocha
+Second name: LiveScript
+Third name: JavaScript
+JavaScript → the name was chosen primarily for marketing/branding purposes and does not mean JavaScript is based on Java.
+--------------------------------
+
+
+Features of JavaScript 
+----------------------------
+1) Used for developing frontened , backened as well as testing.
+2) It i simple , easy to learn and debug.
+
+3) It has a huge community support . (Google,Microsoft,Mets)
+4) By using js you could work on cross-platform technologies.
+5)Commonly described as an interpreted language
+
+6)Synchronous by default, but can perform asynchronous operations
+
+7)Dynamically typed
+
+8)Loosely typed
+
+
+What is cross platform technology ?
+
+-> Instead creating application for siffernet OS and Hardwares , create it once technology id known as cross platform technology.
+
+React-Native , ionic , and a lot uses JavaScript.
+
+JS is an interpreted language...
+
+
+Dynamically typed — your note
+
+You don't need to explicitly specify the data type of a variable. JavaScript determines the type at runtime.
+
+Think of JavaScript tokens like grammar in English.
+
+English: Grammar elements → make a sentence
+JavaScript: Tokens → make a statement
+
+JavaScript tokens:
+Keywords
+Identifiers
+Variables
+Literals
+Constants
+Datatypes
+Operators
+Comments
+Separators
+
+
+
+
+
+
+JAVASCRIPT NOTES
+================
+
+1. TOKENS IN JAVASCRIPT
+-----------------------
+
+A token is the smallest meaningful unit of JavaScript code.
+
+Tokens are the basic building blocks used to write and understand JavaScript statements.
+
+Main types of JavaScript tokens:
+1. Keywords
+2. Identifiers
+3. Variables
+4. Literals
+5. Constants
+6. Data Types
+7. Operators
+8. Comments
+9. Separators
+
+
+2. KEYWORDS IN JAVASCRIPT
+-------------------------
+
+Keywords are words that are already defined by JavaScript.
+Technically, they are called reserved words.
+
+Examples:
+for, if, switch, let, var, const, finally, catch, try, typeof, etc.
+
+Keywords have a special/predefined meaning in JavaScript.
+
+Example:
+let age = 20;
+
+Here, "let" is a keyword.
+
+A keyword cannot normally be used as an identifier.
+
+Example:
+let if = 10;        // Invalid
+
+Note:
+The exact number of JavaScript keywords depends on the ECMAScript
+version and on which reserved-word categories are being counted.
+Do not treat "40 to 50" as an exact fixed number.
+
+
+3. IDENTIFIERS
+--------------
+
+Identifiers are names used to identify programming elements.
+
+They can be names of:
+- Variables
+- Functions
+- Classes
+- Objects
+- Constants
+
+Example:
+
+let age = 20;
+
+function calculate() {
+}
+
+Here:
+age         -> Identifier
+calculate   -> Identifier
+
+
+4. RULES FOR NAMING IDENTIFIERS
+-------------------------------
+
+1. An identifier must NOT start with a digit.
+
+Invalid:
+let 2name = "Sam";
+
+Valid:
+let name2 = "Sam";
+
+
+2. $ and _ can be used in identifiers.
+
+Examples:
+let $price = 500;
+let _name = "Sam";
+
+
+3. Spaces are NOT allowed in identifiers.
+
+Invalid:
+let first name = "Sam";
+
+Valid:
+let firstName = "Sam";
+let first_name = "Sam";
+
+
+4. JavaScript keywords cannot be used as identifiers.
+
+Invalid:
+let for = 10;
+let class = "CSE";
+
+
+5. Identifiers can contain letters, digits, $ and _.
+
+Examples:
+let student1 = "Sam";
+let student_name = "Sam";
+let student$name = "Sam";
+
+
+6. Identifiers are case-sensitive.
+
+Example:
+
+let age = 20;
+let Age = 30;
+let AGE = 40;
+
+age, Age and AGE are treated as different identifiers.
+
+
+QUICK REVISION
+==============
+
+Token:
+The smallest meaningful unit of JavaScript code.
+
+Keyword:
+A predefined/reserved word having a special meaning in JavaScript.
+
+Identifier:
+A name used to identify variables, functions, classes, constants, etc.
+
+Examples:
+
+let age = 20;
+
+let      -> Keyword
+age      -> Identifier
+=        -> Operator
+20       -> Literal
+
+
+IDENTIFIER RULES TO REMEMBER
+============================
+
+- Cannot start with a digit
+- No spaces are allowed
+- Keywords cannot be used
+- Letters, digits, $ and _ can be used
+- Identifiers are case-sensitive
+
+
+EXAM DEFINITION
+===============
+
+An identifier is a name used to identify programming elements
+such as variables, functions, classes and constants in JavaScript.
+
+
+Your JavaScript Identifier Rules are:
+
+1)An identifier must not start with a digit.
+2)$ and _ are allowed as special characters in identifiers.
+3)Spaces are not allowed.
+4)JavaScript keywords/reserved words cannot be used as identifiers.
+5)You can combine letters, digits, $, and _ to create an identifier.
+6)Identifiers are case-sensitive.
+7)All the above rules must be followed.
+
+
+Comments in JS
+
+---------------------------
+It is ignores by the Browser
+It is only for developer understanding .
+
+Comments are two types :
+
+1)Single line commments 
+// commment 01
+
+
+
+2)Multi line comment 
+
+
+What is Variable in JS?
+A variable is a container that is used to store the value 
+A variable occupies some memory in your system
+
+Total three ways are there to create a variable in JavaScript
+var
+let
+const
+
+What is console.log() statement?
+It will help you to add a message to your browser console.
+
+What is browser console panel?
+If you want to check or debug your application you'll find this console panel inside the browser
+
+
+const
+-------
+declaration is allowed, but it must be initialized at the time of declaration.
+the value of const variable cannot be changed after initialization.
+alone initialization is not allowed, it must be initialized at the time of declaration.
+initialization is allowed
+re-declaration is not allowed
+re-initialization is not allowed
+
+data type 
+----------
+what kind of data you're storing in a variable 
+
+data tyeps 
+primitive- number, string, null,boolean(it allows to store a single value in a variable)
+non-primitive - array,object,class(it allows to store multiple values ina single variable)
+
+string
+------
+string is a sequence of charactres
+there are total 3 ways to store strings values in 
+1-double quote-"hello"
+2-single quote-'hello'
+3-back tick-`hello`
+
+type conversion
+--------------
+converting one data type to other data type
+example- string to numbers,number to string,boolean to string
+
+conversion of sting /boolean to numbers
+01-number()
+02-parseInt()
+03-parseFloat()
+
+note:- + is used for both addition and concatenation of two strings and numbers values or converting string to number and number to string
