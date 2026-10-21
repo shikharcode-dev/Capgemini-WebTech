@@ -168,3 +168,118 @@ if ("") { }     // "" treated as false
 if (1)  { }     // 1 treated as true
 
 
+// Create an array and console that value
+let myArray = ["apple", "banana", "orange"];
+console.log(myArray);
+
+
+// Heterogeneous array - an array that can hold different data types.
+let heterogeneousArray = ["ramesh", true, 42, null, undefined, { name: "John" }, [1, 2, 3]];
+console.log(heterogeneousArray);
+
+
+//Object:-
+let myMarks = [80, 90, 70, 85];
+let myMarksObject = {
+  math: 80,
+  science: 90,
+  english: 70,
+  history: 85
+};
+console.log(myMarksObject);
+
+// CRUD Operations on Objects in JavaScript
+// CRUD stands for: Create, Read, Update, Delete
+
+// CREATE - Creating an object and adding properties
+// Method 1: Object literal (most common)
+let student = {
+    name: "Sam",
+    age: 20,
+    course: "JavaScript"
+};
+
+// Method 2: Using new Object()
+let employee = new Object();
+employee.name = "John";
+employee.salary = 50000;
+
+// Method 3: Adding properties after creation
+let product = {};
+product.id = 101;
+product.name = "Laptop";
+product.price = 45000;
+
+
+// READ - Accessing/Reading object properties
+// Method 1: Dot notation
+console.log(student.name);        // Output: Sam
+
+// Method 2: Bracket notation
+console.log(student['age']);      // Output: 20
+
+// Reading all properties using for...in loop
+for (let key in student) {
+    console.log(key + ": " + student[key]);
+}
+
+// Using Object.keys() to get all keys
+console.log(Object.keys(student));    // Output: ['name', 'age', 'course']
+
+// Using Object.values() to get all values
+console.log(Object.values(student));  // Output: ['Sam', 20, 'JavaScript']
+
+// Using Object.entries() to get key-value pairs
+console.log(Object.entries(student)); // Output: [['name', 'Sam'], ['age', 20], ['course', 'JavaScript']]
+
+
+// UPDATE - Modifying existing properties
+// Method 1: Dot notation
+student.age = 21;
+
+// Method 2: Bracket notation
+student['course'] = "React";
+
+// Updating multiple properties at once using Object.assign()
+Object.assign(student, {
+    age: 22,
+    course: "Node.js",
+    grade: "A"
+});
+
+
+// DELETE - Removing properties from object
+// Using delete operator
+delete student.grade;
+
+// Checking if property exists before deleting
+if ('course' in student) {
+    delete student.course;
+}
+
+// Setting property to undefined (alternative, but not recommended)
+student.age = undefined;  // Property still exists but value is undefined
+
+
+// COMPLETE CRUD EXAMPLE
+let book = {};
+
+// CREATE
+book.title = "JavaScript Basics";
+book.author = "John Doe";
+book.pages = 300;
+book.price = 500;
+
+// READ
+console.log("Book Title: " + book.title);
+console.log("All book details:", book);
+
+// UPDATE
+book.price = 450;  // Updating price
+book.edition = "2nd";  // Adding new property
+
+// DELETE
+delete book.pages;
+
+console.log("Final book object:", book);
+

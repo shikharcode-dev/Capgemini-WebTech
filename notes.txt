@@ -956,3 +956,59 @@ conversion of sting /boolean to numbers
 03-parseFloat()
 
 note:- + is used for both addition and concatenation of two strings and numbers values or converting string to number and number to string
+
+Definition: An array in Java is a collection of elements of the same data type stored under a single variable name. Each element is accessed using an index, starting from 0.
+the values in an array stored in a sequence order technically those order is known as indexes
+make sure the values are wrapped within a square bracket , seperatd by comma.
+
+object
+------------------------
+// An object is a collection of key-value pairs used to store multiple related values
+// Objects are non-primitive data types in JavaScript
+
+// Key Points:
+// 1. Objects store data in key-value pairs (property: value)
+// 2. Keys are also called properties or attributes
+// 3. Values can be any data type (string, number, boolean, array, another object, function)
+// 4. Objects are created using curly braces {}
+// 5. Properties are accessed using dot notation (object.property) or bracket notation (object['property'])
+// 6. Objects are mutable - properties can be added, modified, or deleted after creation
+// 7. Objects are passed by reference, not by value
+
+// Syntax:
+// let objectName = {
+//     key1: value1,
+//     key2: value2,
+//     key3: value3
+// };
+
+// Example:
+// let student = {
+//     name: "Sam",
+//     age: 20,
+//     course: "JavaScript"
+// };
+
+// Accessing values:
+// console.log(student.name);        // Output: Sam
+// console.log(student['age']);      // Output: 20
+
+// Adding/Modifying properties:
+// student.grade = "A";              // Adding new property
+// student.age = 21;                 // Modifying existing property
+
+// Deleting properties:
+// delete student.course;            // Removes the course property
+
+
+
+//create an object to store employee information.
+//create an object to store your privous MST results and marks.
+//create an object to store your list of friends.
+//create an object to store your syllabus of your current semester.
+
+
+
+by using objname.keyname you could access the value of that keyname in the object.
+
+task - create list of students array of object for the student managment system and store the information in each object of the array.
