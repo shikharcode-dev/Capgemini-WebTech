@@ -1002,13 +1002,40 @@ object
 
 
 
-//create an object to store employee information.
-//create an object to store your privous MST results and marks.
-//create an object to store your list of friends.
-//create an object to store your syllabus of your current semester.
+
 
 
 
 by using objname.keyname you could access the value of that keyname in the object.
 
 task - create list of students array of object for the student managment system and store the information in each object of the array.
+
+
+// Functions - A function is a reusable block of code designed to perform a specific task
+// Functions help organize code, avoid repetition, and make programs more modular
+
+// Function Definition:
+// A function definition is the process of creating/declaring a function with a specific name,
+// parameters (optional), and a block of code that executes when the function is called.
+
+// Two Main Parts of a Function:
+// 1. Function Declaration/Header - Defines the function name and parameters
+// 2. Function Body/ function calling - Contains the code/logic that executes when function is called
+
+// Syntax:
+// function functionName(parameters) {    // Part 1: Function Declaration
+//     // Part 2: Function Body (code to execute)
+//     return value; // optional
+// }
+
+
+function parameter=
+// Function Parameter Definition:
+// A function parameter is a variable listed in the function declaration that acts as a placeholder
+// for values (called arguments) that will be passed to the function when it is called.
+// Parameters allow functions to accept input data and work with different values each time they are invoked.
+
+
+
+how to convert string to an array in JavaScript?
+You can convert a string to an array in JavaScript using the `split()` method. The `split()` method divides a string into an array of substrings based on a specified delimiter.
